@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltorb</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+            background-color: white;
+        }
+
+        .pokemon {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid black;
+            z-index: 20;
+        }
+
+        .top {
+            height: 96px;
+            width: 200px;
+            background-color: red;
+            border-radius: 90px 90px 0 0;
+            z-index: 2;
+            transform: rotateY(0deg) rotate(315deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Voltorb</h1>
+
+    <div class="container">
+        <div class="pokemon"></div>
+        <div class="top"></div>
+        <div class="left-eye"></div>
+        <div class="right-eye"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>
