@@ -1,19 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diglett</title>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background: azure;
+        }
 
+        .container {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 100px;
+        }
+
+        .head {
+            position: absolute;
+            height: 100px;
+            width: 120px;
+            background: #A97557;
+            border-radius: 90px 90px 0 0;
+            z-index: 1;
+        }
+
+        .poke-body {
+            position: absolute;
+            top: 55px;
+            height: 100px;
+            width: 120px;
+            background: #A97557;
+
+        }
+
+        .left-eye {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            height: 30px;
+            width: 10px;
+            background: black;
+            border-radius: 16px;
+        }
+
+        .right-eye {
+            position: absolute;
+            top: 30px;
+            left: 60px;
+            height: 30px;
+            width: 10px;
+            background: black;
+            border-radius: 16px;
+        }
+
+        .nose {
+            position: absolute;
+            top: 65px;
+            left: 18px;
+            height: 30px;
+            width: 60px;
+            border: 1px solid black;
+            border-radius: 90px / 45px;
+            background: #E5707A;
+        }
     </style>
 </head>
+
 <body>
     <h1>Diglett</h1>
 
     <div class="container">
-        <div class="pokemon"></div>
 
+        <div class="head">
+            <div class="left-eye">
+
+            </div>
+            <div class="right-eye">
+
+            </div>
+            <div class="nose"></div>
+        </div>
+
+        <div class="poke-body"></div>
+
+        <div class="ground"></div>
+        <!-- </div> -->
     </div>
 </body>
+
 </html>
