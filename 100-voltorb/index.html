@@ -1,47 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voltorb</title>
     <style>
-        .container {
+        body {
             display: flex;
             justify-content: center;
-            z-index: 1;
-            background-color: white;
+            background: azure;
         }
 
-        .pokemon {
+        .container {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 100px;
+        }
+
+        .circle {
             position: absolute;
             height: 200px;
             width: 200px;
             border-radius: 50%;
             border: 2px solid black;
-            z-index: 20;
+            overflow: hidden;
+            transform: rotate(90deg);
         }
 
-        .top {
+        .circle:after,
+        .circle:before {
+            content: '';
             position: absolute;
-            height: 96px;
-            width: 200px;
-            background-color: red;
-            border-radius: 90px 90px 0 0;
-            z-index: 2;
-            transform: rotateY(0deg) rotate(315deg);
+            height: 110%;
+            width: 77%;
+        }
+
+        .circle:after {
+            background: red;
+            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            left: -2px;
+        }
+
+        .circle:before {
+            background: white;
+            right: -2px;
+        }
+
+        .left-eye {
+            position: absolute;
+            top: 70px;
+            left: -55px;
+            transform: scale(1, -1) rotate(230deg);
+            height: 40px;
+            width: 20px;
+            border-bottom: 3px solid black;
+            border-right: 3px solid black;
+        }
+
+        .right-eye {
+            position: absolute;
+            top: 60px;
+            left: 15px;
+            transform: rotate(45deg);
+            height: 50px;
+            width: 20px;
+            border-bottom: 3px solid black;
+            border-right: 3px solid black;
         }
     </style>
 </head>
+
 <body>
     <h1>Voltorb</h1>
 
     <div class="container">
-        <div class="pokemon"></div>
+        <div class="circle"></div>
         <div class="top"></div>
         <div class="left-eye"></div>
         <div class="right-eye"></div>
         <div class="middle"></div>
         <div class="bottom"></div>
     </div>
+
 </body>
+
 </html>
