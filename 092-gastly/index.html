@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastly</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background: azure;
+        }
+
+        .container {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 100px;
+        }
+
+        .circle {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: #150F0F;
+        }
+
+        .left-eye {
+            position: absolute;
+            top: 70px;
+            left: -55px;
+            transform: scale(1, -1) rotate(230deg);
+            height: 40px;
+            width: 20px;
+
+        }
+
+        .right-eye {
+            position: absolute;
+            top: 60px;
+            left: 15px;
+            transform: rotate(45deg);
+            height: 50px;
+            width: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gastly</h1>
+
+    <div class="container">
+        <div class="circle"></div>
+        <div class="left-eye"></div>
+        <div class="right-eye"></div>
+        <div class="mouth"></div>
+    </div>
+
+</body>
+
+</html>
