@@ -30,22 +30,48 @@
 
         .left-eye {
             position: absolute;
-            top: 70px;
-            left: -55px;
-            transform: scale(1, -1) rotate(230deg);
-            height: 40px;
-            width: 20px;
+            top: 76px;
+            left: -110px;
+            transform: scale(1, -1) rotate(131deg);
+            height: 50px;
+            width: 80px;
+            border-radius: 0 0 90px 60px / 0 0 100px 60px;
+            background: #f7f2f3;
 
         }
 
         .right-eye {
             position: absolute;
-            top: 60px;
-            left: 15px;
-            transform: rotate(45deg);
-            height: 50px;
-            width: 20px;
+            top: 75px;
+            left: -5px;
+            transform: rotate(320deg);
+            height: 60px;
+            width: 95px;
+            border-radius: 0 0 90px 90px;
+            background: #f7f2f3;
+        }
 
+        .left-pupil {
+            position: absolute;
+            top: 10px;
+            left: 14px;
+            transform: rotate(310deg);
+            height: 4px;
+            width: 10px;
+            border-radius: 50%;
+            background: black;
+
+        }
+
+        .right-pupil {
+            position: absolute;
+            top: 10px;
+            left: 14px;
+            transform: rotate(310deg);
+            height: 4px;
+            width: 10px;
+            border-radius: 50%;
+            background: black;
         }
     </style>
 </head>
@@ -55,8 +81,12 @@
 
     <div class="container">
         <div class="circle"></div>
-        <div class="left-eye"></div>
-        <div class="right-eye"></div>
+        <div class="left-eye">
+            <div class="left-pupil"></div>
+        </div>
+        <div class="right-eye">
+            <div class="right-pupil"></div>
+        </div>
         <div class="mouth"></div>
     </div>
 
