@@ -47,6 +47,47 @@
             border-radius: 16px;
         }
 
+        .top-left-eye {
+            position: absolute;
+            top: 3px;
+            left: 2.5px;
+            height: 5px;
+            width: 5px;
+            background: white;
+            border-radius: 16px;
+        }
+
+        .bottom-left-eye {
+            position: absolute;
+            top: 19px;
+            left: 1px;
+            height: 10px;
+            width: 8px;
+            background: #863D20;
+            border-radius: 16px;
+        }
+
+
+        .top-right-eye {
+            position: absolute;
+            top: 3px;
+            right: 2.5px;
+            height: 5px;
+            width: 5px;
+            background: white;
+            border-radius: 16px;
+        }
+
+        .bottom-right-eye {
+            position: absolute;
+            top: 19px;
+            left: 1px;
+            height: 10px;
+            width: 8px;
+            background: #863D20;
+            border-radius: 16px;
+        }
+
         .right-eye {
             position: absolute;
             top: 30px;
@@ -66,6 +107,17 @@
             border: 1px solid black;
             border-radius: 90px / 45px;
             background: #E5707A;
+
+        }
+
+        .nose-highlight {
+            position: absolute;
+            top: 5px;
+            left: 7px;
+            height: 10px;
+            width: 20px;
+            border-radius: 90px / 45px;
+            background: white;
         }
     </style>
 </head>
@@ -77,12 +129,16 @@
 
         <div class="head">
             <div class="left-eye">
-
+                <div class="top-left-eye"></div>
+                <div class="bottom-left-eye"></div>
             </div>
             <div class="right-eye">
-
+                <div class="top-right-eye"></div>
+                <div class="bottom-right-eye"></div>
             </div>
-            <div class="nose"></div>
+            <div class="nose">
+                <div class="nose-highlight"></div>
+            </div>
         </div>
 
         <div class="poke-body"></div>
