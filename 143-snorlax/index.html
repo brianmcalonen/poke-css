@@ -21,11 +21,35 @@
 
         .circle {
             position: absolute;
-            height: 200px;
-            width: 200px;
-            background: blue;
-            border-radius: 50%;
-            border: 2px solid black;
+            height: 190px;
+            width: 280px;
+            background: #0E5C68;
+            border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+            border: 1px solid black;
+        }
+
+        .left-foot {
+            position: absolute;
+            top: 105px;
+            left: -162px;
+            height: 93px;
+            width: 93px;
+            background: #F5CF9E;
+            border-radius: 60% 40% 38% 62% / 58% 62% 38% 42%;
+            border: 1px solid black;
+            transform: rotate(220deg) scaleY(-1);
+        }
+
+        .right-foot {
+            position: absolute;
+            top: 105px;
+            left: 58px;
+            height: 93px;
+            width: 93px;
+            background: #F5CF9E;
+            border-radius: 60% 40% 38% 62% / 58% 62% 38% 42%;
+            border: 1px solid black;
+            transform: rotate(220deg);
         }
 
     </style>
@@ -36,6 +60,8 @@
 
     <div class="container">
         <div class="circle"></div>
+        <div class="left-foot"></div>
+        <div class="right-foot"></div>
     </div>
 
 </body>
