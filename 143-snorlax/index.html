@@ -29,16 +29,68 @@
             z-index: 1;
         }
 
+        .head {
+            position: absolute;
+            top: -44px;
+            left: -65px;
+            height: 100px;
+            width: 125px;
+            background: #0E5C68;
+            border-radius: 35% 35% 20% 20% / 50% 50% 50% 50%;
+            border: 1px solid black;
+            z-index: 0;
+        }
+
+        .face {
+            position: absolute;
+            top: -10px;
+            left: -35px;
+            height: 66px;
+            width: 66px;
+            background: #F5CF9E;
+            border: 1px solid black;
+            transform: rotate(-45deg);
+            z-index: 0;
+        }
+
+        .face:before {
+            content: "";
+            position: absolute;
+            height: 66px;
+            width: 66px;
+            background: #F5CF9E;
+            border-radius: 50%;
+        }
+
+        .face:after {
+            content: "";
+            position: absolute;
+            height: 66px;
+            width: 66px;
+            background: #F5CF9E;
+            border-radius: 50%;
+        }
+
+        .face:before {
+            top: -30px;
+            left: 0;
+        }
+
+        .face:after {
+            top: 0;
+            left: 30px;
+        }
+
         .left-arm {
             position: absolute;
-            top: 20px;
-            left: -175px;
-            height: 80px;
+            top: 16px;
+            left: -166px;
+            height: 86px;
             width: 160px;
             background: #0E5C68;
             border-radius: 50% 50% 50% 50% / 47% 47% 53% 53%;
             border: 1px solid black;
-            transform: rotate(60deg);
+            transform: rotate(55deg);
             z-index: 0;
         }
 
@@ -65,7 +117,7 @@
             border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
             border: 1px solid black;
             transform: rotate(152deg);
-            z-index: 3; 
+            z-index: 3;
         }
 
         .right-arm {
@@ -105,7 +157,7 @@
             border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
             border: 1px solid black;
             transform: rotate(320deg) scaleY(-1, 1);
-            z-index: 3; 
+            z-index: 3;
         }
     </style>
 </head>
@@ -115,12 +167,14 @@
 
     <div class="container">
         <div class="circle"></div>
+        <div class="head"></div>
+        <div class="face"></div>
         <div class="left-arm"></div>
         <div class="right-arm"></div>
         <div class="left-foot"></div>
-        <div class="left-foot-center"></div>  
+        <div class="left-foot-center"></div>
         <div class="right-foot"></div>
-        <div class="right-foot-center"></div>  
+        <div class="right-foot-center"></div>
     </div>
 
 </body>
