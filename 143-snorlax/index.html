@@ -16,7 +16,7 @@
             position: absolute;
             display: flex;
             justify-content: center;
-            top: 100px;
+            top: 150px;
         }
 
         .circle {
@@ -26,6 +26,20 @@
             background: #0E5C68;
             border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
             border: 1px solid black;
+            z-index: 1;
+        }
+
+        .left-arm {
+            position: absolute;
+            top: 20px;
+            left: -175px;
+            height: 80px;
+            width: 160px;
+            background: #0E5C68;
+            border-radius: 50% 50% 50% 50% / 47% 47% 53% 53%;
+            border: 1px solid black;
+            transform: rotate(60deg);
+            z-index: 0;
         }
 
         .left-foot {
@@ -38,6 +52,33 @@
             border-radius: 60% 40% 38% 62% / 58% 62% 38% 42%;
             border: 1px solid black;
             transform: rotate(220deg) scaleY(-1);
+            z-index: 2;
+        }
+
+        .left-foot-center {
+            position: absolute;
+            top: 143px;
+            left: -136px;
+            height: 40px;
+            width: 50px;
+            background: #A1704F;
+            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+            border: 1px solid black;
+            transform: rotate(152deg);
+            z-index: 3; 
+        }
+
+        .right-arm {
+            position: absolute;
+            top: 34px;
+            left: 10px;
+            height: 80px;
+            width: 160px;
+            background: #0E5C68;
+            border-radius: 50% 50% 50% 50% / 47% 47% 53% 53%;
+            border: 1px solid black;
+            transform: rotate(207deg);
+            z-index: 0;
         }
 
         .right-foot {
@@ -50,8 +91,22 @@
             border-radius: 60% 40% 38% 62% / 58% 62% 38% 42%;
             border: 1px solid black;
             transform: rotate(220deg);
+            z-index: 2;
+
         }
 
+        .right-foot-center {
+            position: absolute;
+            top: 140px;
+            left: 75px;
+            height: 40px;
+            width: 50px;
+            background: #A1704F;
+            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+            border: 1px solid black;
+            transform: rotate(320deg) scaleY(-1, 1);
+            z-index: 3; 
+        }
     </style>
 </head>
 
@@ -60,8 +115,12 @@
 
     <div class="container">
         <div class="circle"></div>
+        <div class="left-arm"></div>
+        <div class="right-arm"></div>
         <div class="left-foot"></div>
+        <div class="left-foot-center"></div>  
         <div class="right-foot"></div>
+        <div class="right-foot-center"></div>  
     </div>
 
 </body>
