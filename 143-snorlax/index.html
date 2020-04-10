@@ -41,6 +41,32 @@
             z-index: 0;
         }
 
+        .left-ear {
+            position: absolute;
+            top: -55px;
+            left: -60px;
+            height: 50px;
+            width: 50px;
+            background: #0E5C68;
+            border-radius: 50% 50% 0% 0% / 100% 100% 0% 0% ;
+            border: 1px solid black;
+            transform: rotate(315deg) scale(-1, 1); 
+            z-index: -1;
+        }
+
+        .right-ear {
+            position: absolute;
+            top: -55px;
+            left: 5px;
+            height: 50px;
+            width: 50px;
+            background: #0E5C68;
+            border-radius: 50% 50% 0% 0% / 100% 100% 0% 0% ;
+            border: 1px solid black;
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+
         .face {
             position: absolute;
             top: -10px;
@@ -49,13 +75,15 @@
             width: 66px;
             background: #F5CF9E;
             border: 1px solid black;
-            transform: rotate(-45deg);
+            transform: rotate(315deg);
             z-index: 0;
         }
 
         .face:before {
             content: "";
             position: absolute;
+            top: -30px;
+            left: 0;
             height: 66px;
             width: 66px;
             background: #F5CF9E;
@@ -65,13 +93,15 @@
         .face:after {
             content: "";
             position: absolute;
+            top: 0;
+            left: 30px;
             height: 66px;
             width: 66px;
             background: #F5CF9E;
             border-radius: 50%;
         }
 
-        .face:before {
+        /* .face:before {
             top: -30px;
             left: 0;
         }
@@ -79,7 +109,7 @@
         .face:after {
             top: 0;
             left: 30px;
-        }
+        } */
 
         .left-arm {
             position: absolute;
@@ -168,6 +198,8 @@
     <div class="container">
         <div class="circle"></div>
         <div class="head"></div>
+        <div class="left-ear"></div>
+        <div class="right-ear"></div>
         <div class="face"></div>
         <div class="left-arm"></div>
         <div class="right-arm"></div>
